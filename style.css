@@ -121,6 +121,7 @@ nav ul li a:hover {
   text-align: center;
   font-size: 40px;
   height: 100vh;
+  margin: auto;
 }
 
 .skills .skill-icons {
@@ -128,7 +129,6 @@ nav ul li a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  font-size: 0px;
 }
 
 .skills .skill-icons h3 {
@@ -147,6 +147,10 @@ nav ul li a:hover {
   font-size: 60px;
   margin: 10% auto;
   text-align: center;
+}
+
+.projects {
+  margin: 55% auto;
 }
 
 .project-icons {
