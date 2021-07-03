@@ -149,10 +149,6 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.projects {
-  margin: 55% auto;
-}
-
 .project-icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -290,5 +286,9 @@ footer a i:hover {
     justify-items: center;
     align-items: center;
     text-align: center;
+  }
+
+  .projects {
+    margin: 55% auto;
   }
 }
