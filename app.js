@@ -2,13 +2,6 @@ const load = () => {
     let logo = document.querySelector(".BK")
     logo.classList.toggle("BK-spin")
 
- 
-      
-     
-
-  
-
-
     setTimeout(function(){
         let footer = document.querySelector("footer")
         footer.classList.toggle("hidden-footer")
@@ -64,4 +57,3 @@ redScheme.addEventListener("click", function(){
     
     
 })
-
