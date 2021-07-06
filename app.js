@@ -18,12 +18,32 @@ const load = () => {
 let body = document.querySelector("body")
 let redScheme = document.querySelector("#red")
 
+let darkMode = localStorage.getItem("darkMode")
 
+const enableDarkMode = () => {
+    body.classList.add("background-color-change-dark")
+    localStorage.setItem("darkMode", "enabled")
+}
 
+const disableDarkMode = () => {
+    body.classList.remove("background-color-change-dark")
+    localStorage.setItem("darkMode", null)
+}
 
+if (darkMode == "enabled"){
+    enableDarkMode()
+}
 
 redScheme.addEventListener("click", function(){
-    let choice = 0
+    darkMode = localStorage.getItem("darkMode")
+
+    if (darkMode !== "enabled"){
+        enableDarkMode()
+    }
+    else {
+        disableDarkMode()
+    }
+
     let moonIcon = document.querySelector("#red i")
     moonIcon.classList.toggle("fa-sun")
     
@@ -44,3 +64,4 @@ redScheme.addEventListener("click", function(){
     
     
 })
+
